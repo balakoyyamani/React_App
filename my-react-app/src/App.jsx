@@ -5,8 +5,13 @@ import Footer from "./components/Footer"
 function App() {
   return (
     <div>
-      <Header />
-      <Profile />
+      <Header name="Hello this prop"/>
+      <Profile 
+      name="Bala"
+      role="React Developer"/>
+      <Profile 
+      name="Irai"
+      role="Java Developer"/>
       <Footer />
     </div>
   );

@@ -1,8 +1,8 @@
-function Profile(){
+function Profile({name,role}){
     return(
         <div>
-        <h1>BalaK</h1>
-        <p>React Developer</p>
+        <p><b>{name}</b></p>
+        <p>{role}</p>
         </div>
     );
 }

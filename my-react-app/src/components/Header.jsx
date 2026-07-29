@@ -1,6 +1,6 @@
-function Header(){
+function Header(prop){
     return(
-        <h1>Balak's Portfolio</h1>
+        <h1>{prop.name}'s Portfolio</h1>
     );
 }
 export default Header;

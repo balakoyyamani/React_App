@@ -8,6 +8,8 @@ function Navbar(){
             <Link to="/About">About</Link>
             {" | "}
             <Link to="/Contact">Contact</Link>
+            {" | "}
+            <Link to="/Counter">Counter</Link>
         </nav>
     );
 }

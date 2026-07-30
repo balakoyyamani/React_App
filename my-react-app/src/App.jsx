@@ -1,19 +1,23 @@
-import Header from "./components/Header"
-import Profile from "./components/Profile"
-import Footer from "./components/Footer"
+import {BrowserRouter,Routes,Route} from "react-router-dom";
+
+import Navbar from "./components/NavBar";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
-    <div>
-      <Header name="Hello this prop"/>
-      <Profile 
-      name="Bala"
-      role="React Developer"/>
-      <Profile 
-      name="Irai"
-      role="Java Developer"/>
-      <Footer />
-    </div>
+    <BrowserRouter>
+    <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/About" element={<About />} />
+        <Route path="/Contact" element={<Contact />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </BrowserRouter>
+
   );
 }
 
